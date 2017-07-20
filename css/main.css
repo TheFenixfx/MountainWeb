@@ -1,0 +1,248 @@
+
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+#bigStack{
+
+    background-color: gray;
+    text-align: center;
+    min-height: 600px;
+}
+
+#a, #b{
+    background-color: transparent;
+    min-height: 800px;
+    text-align: center;
+    overflow: hidden;
+    color: #e6ffff;
+    background: rgba(255,255,255,0.1);
+    font-family: "Gill Sans MT";
+    font-size: 23px;
+}
+#c{
+    background-image: url("../img/butterfly.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    min-height: 800px;
+    text-align: center;
+    overflow: hidden;
+    font-family: "Gill Sans MT";
+    font-size: 23px;
+   opacity: 0.80;
+}
+#d{
+    background-image: url("../img/leaf.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    min-height: 800px;
+    text-align: center;
+    overflow: hidden;
+    font-family: "Gill Sans MT";
+    font-size: 23px;
+   opacity: 0.80;
+}
+
+#rwtxt{
+    padding: 80px;
+}
+
+body{
+    background-image: url(../img/Mountain.jpeg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    
+     overflow-x: hidden;
+}
+#imgCarrusel{
+
+}
+
+.carousel.fade {
+     opacity: 1;
+}
+.carousel.fade .item  {
+    transition: opacity ease-out .7s;
+    left: 0;
+    opacity: 0; /* hide all slides */
+    top: 0;
+    position: absolute;
+    width: 100%;
+    display: block;
+}
+
+.carousel.fade .item:first-child {
+    top: auto;
+    opacity: 1; /* show first slide */
+    position: relative;
+}
+
+.carousel.fade .item.active {
+    opacity: 1;
+}
+  /*cuando esta activo opcity 1, sino en 0*/
+.carousel.fade .item .carousel-caption{
+    opacity: 0;
+}
+.carousel.fade .item.active .carousel-caption{
+    opacity: 1;
+}
+
+
+
+/*bar custom */
+.navbar-custom{ 
+    background-color: black;
+    font-size: 16px;
+    color:white
+}
+
+.navbar-custom > li > a:hover{
+    background-color: silver; /*Change rollover cell color here*/
+  }
+
+  .navbar-custom > li a:click{
+    color:black;
+  }
+
+  .paralax{
+    background-attachment: fixed;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.65;
+    position: relative;
+  }
+  
+
+.paralax {
+    /* The image used */
+    background-image: url("../img/walk.jpg");
+
+    /* Set a specific height */
+    min-height: 400px; 
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+     position: relative;
+}
+
+
+
+#myFooter {
+	background-color: #373a48;
+	color:white;
+        
+}
+
+#myFooter .footer-copyright{
+	background-color: #383737;
+	padding-top:3px;
+	padding-bottom:3px;
+	text-align: center;
+}
+
+#myFooter .footer-copyright p{
+	margin:10px;
+	color: #ccc;
+}
+
+#myFooter ul{
+    list-style-type: none;
+    padding-left: 0;
+    line-height: 1.7;
+
+}
+
+#myFooter h5{
+    font-size: 18px;
+    color: white;
+    font-weight: bold;
+    margin-top: 30px;
+}
+
+#myFooter a{
+	color:#d2d1d1;
+	text-decoration: none;
+}
+
+#myFooter a:hover, #myFooter a:focus{
+	text-decoration: none;
+	color:white;
+}
+
+#myFooter .myCols{
+	text-align: center;
+}
+
+#myFooter .social-networks{
+	text-align: center;
+	padding-top: 30px;
+	padding-bottom: 38px;
+}
+
+#myFooter .social-networks a{
+    font-size: 32px;
+    margin-right: 5px;
+    margin-left: 5px;
+    color: #f9f9f9;
+    padding: 10px;
+    transition: 0.2s;
+}
+
+#myFooter .social-networks a:hover{
+	text-decoration: none;
+
+}
+
+#myFooter .facebook:hover{
+	color:#0077e2;
+}
+
+#myFooter .google:hover{
+	color:#ef1a1a;
+}
+
+#myFooter .twitter:hover{
+	color: #00aced;
+}
+
+@media screen and (max-width: 767px){
+	#myFooter {
+		text-align: center;
+	}
+}
+
+
+
+/* CSS used for positioning the footers at the bottom of the page. */
+/* You can remove this. */
+
+
+html{
+	height: 100% !important;
+}
+
+body{
+    display: flex;
+    display: -webkit-flex;
+    flex-direction: column;
+    -webkit-flex-direction: column;
+    height: 100%;
+}
+
+.content{
+	flex: 1 0 auto;
+	-webkit-flex: 1 0 auto;
+	min-height: 200px;
+}
+
+#myFooter{
+	flex: 0 0 auto;
+    -webkit-flex: 0 0 auto;
+}
